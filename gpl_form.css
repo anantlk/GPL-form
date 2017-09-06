@@ -7,16 +7,45 @@ body {
 {
   margin:0px;
 }
-img.back
+.back
 {
-  position:fixed;
+  position:relative;
+  background-image:url("BG.png");
+  background-size:cover;
+  background-attachment: fixed;
+  height:100vh;
+  background-position: center;
 }
 img.logo2
 {
   visibility:visible;
   margin-left:5%;
   width:35%;
-  height:29em;
+  height:27em;
+}
+.footer
+{
+  position:relative;
+  top:7vh;
+}
+.logo
+{
+  float:left;
+  width:16%;
+  height:auto;
+}
+.vit_logo
+{
+  height:auto;
+  width:13%;
+  margin-left:70%;
+  margin-bottom:4px;
+  margin-right:10px;
+}
+
+.empty
+{
+  bottom:0;
 }
 .head
 {
@@ -44,6 +73,7 @@ h4
 form
 {
   margin:3%;
+  margin-bottom:0px;
   margin-left:7%;
   background-color:black;
   opacity:0.6;
@@ -85,6 +115,30 @@ form
 }
 @media only screen and (max-width:767px)
 {
+  .footer
+  {
+    position:relative;
+    top:33vh;
+  }
+  .back
+  {
+    height:600px;
+  }
+  .logo
+  {
+    float:left;
+    width:30%;
+    height:auto;
+  }
+  .vit_logo
+  {
+    height:auto;
+    width:25%;
+    margin-left:40%;
+    margin-bottom:4px;
+    margin-right:10px;
+  }
+
   form
   {
     margin-left:11%;
@@ -125,8 +179,33 @@ form
     font-size:0.9em;
   }
 }
+.footer
+{
+  margin:0;
+}
 @media only screen and (min-width:768px) and (max-width:991px)
 {
+  .footer
+  {
+    position:relative;
+    top:40vh;
+  }
+  .logo
+  {
+    position:absolute;
+    bottom:0;
+    width:35%;
+    height:auto;
+
+  }
+  .vit_logo
+  {
+    height:auto;
+    width:25%;
+    position:absolute;
+    bottom:10px;
+    right:10px;
+  }
   .logo1
   {
     height:10em;
@@ -162,6 +241,31 @@ form
 }
 @media screen and (min-width:992px) and (max-width:1191px)
 {
+  .back
+  {
+    height:100vh;
+  }
+  .footer
+  {
+    position:relative;
+    top:49vh;
+  }
+  .logo
+  {
+    position:absolute;
+    bottom:0;
+    width:35%;
+    height:auto;
+
+  }
+  .vit_logo
+  {
+    height:auto;
+    width:25%;
+    position:absolute;
+    bottom:10px;
+    right:10px;
+  }
   form
   {
     margin-left:20%;
